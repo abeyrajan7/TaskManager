@@ -117,14 +117,14 @@ export default function page() {
                         <i className="bi bi-pencil"></i>
                       </button>
                       <button
-                        className="btn btn-sm btn-outline-danger float-end"
-                        onClick={() => {
-                          setProjectToDelete(project);
-                          setShowDeleteModal(true);
-                        }}
-                        title="Delete Project"
+                          className="btn btn-sm btn-outline-danger float-end"
+                          onClick={() => {
+                            setProjectToDelete(project);
+                            setShowDeleteModal(true);
+                          }}
+                          title="Delete Project"
                       >
-                        🗑️
+                        <i className="bi bi-trash3-fill"></i>
                       </button>
                     </div>
                   </div>

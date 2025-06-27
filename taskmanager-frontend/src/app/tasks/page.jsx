@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Modal, Button, Form } from "react-bootstrap";
 import api from "@/utils/axios";
@@ -251,19 +251,19 @@ export default function TasksPage({ task, onUpdate }) {
                               onClick={() => handleEdit(task)}
                               title="Edit"
                             >
-                              ✏️
+                              <i className="bi bi-pencil"></i>
                             </button>
 
                             {/* Delete Button */}
                             <button
-                              className="btn btn-sm btn-light"
-                              onClick={() => {
-                                setTaskToDelete(task);
-                                setShowDeleteModal(true);
-                              }}
-                              title="Delete"
+                                className="btn btn-sm btn-light"
+                                onClick={() => {
+                                  setTaskToDelete(task);
+                                  setShowDeleteModal(true);
+                                }}
+                                title="Delete"
                             >
-                              🗑️
+                              <i className="bi bi-trash3-fill"></i>
                             </button>
                           </div>
                         </li>
