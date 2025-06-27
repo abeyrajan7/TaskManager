@@ -1,0 +1,26 @@
+# Ignore IDE and OS-specific files
+.idea/
+.vscode/
+*.DS_Store
+Thumbs.db
+
+# Laravel
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+.env
+.env.*.php
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+
+# Next.js
+.next
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# System
+.DS_Store
